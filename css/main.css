@@ -1,0 +1,332 @@
+ul{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Customize h1 font size */
+.carousel-caption h1 {
+    font-size: 3rem; /* Adjust the font size as needed */
+    padding-top: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+li{
+    font-size: 20px;
+}
+
+/* styling header carousel button */
+.butn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Button styles on hover */
+  .butn:hover {
+    background-color: black;
+    color: white;
+  }
+
+/* home about us section */
+.about-heading{
+    color: white;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    font-size: 40px;
+}
+
+.about-us{
+    background-color: black;
+    text-align: center;
+}
+
+.about-text {
+    margin-bottom: 40px; /* Adds space at the bottom of the paragraph */
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.abt-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Button styles on hover */
+  .abt-btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* Button styles when clicked */
+  .abt-btn:active {
+    background-color: white;
+    color: black;
+  }
+
+/* Our sevices home section */
+
+.serv{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.service{
+    background-color: black;
+    padding: 20px;
+    padding-top: 10rem;
+}
+
+.butt {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Button styles on hover */
+  .butt:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Button styles when clicked */
+  .butt:active {
+    background-color: white;
+    color: black;
+  }
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+header{
+    background-color: black;
+}
+  
+p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+        /* Center the carousel */
+        .carousel-inner {
+            text-align: center;
+        }
+
+        .carousel-caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        /* mobile version */
+
+/* Styles for the skip link */
+.skip-link {
+    z-index: 1000;
+    margin-left: 20px;
+    animation: wiggle 0.5s infinite;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.skip-link2 {
+    z-index: 1000;
+    animation: wiggle 0.5s infinite;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Wiggle animation for skip link */
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-4px);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+    75% {
+        transform: translateX(-4px);
+    }
+}
+
+footer{
+    color: black;
+    background-color: white;
+}
+
+/* ----------------
+-----About Page----
+----------------- */
+.about-body{
+    background-color: black;
+}
+.about-header{
+    background-image: url(../images/cam-c.jpg);
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.about-page-text{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.about-header h1{
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    padding-top: 19.95rem;
+    border-radius: 5px;
+    color: white;
+}
+.about-sec-link{
+    background-color: black;
+}
+
+.team-p{
+    color: black;
+    font-size: 17px;
+}
+
+.little-about-us{
+    background-color: white;
+    padding-bottom: 8rem;
+}
+
+.about-heading-2{
+    padding-bottom: 3rem;
+    font-size: 40px;
+    padding-top: 8rem;
+}
+
+.team{
+        color: white;
+        font-size: 40px;
+        padding-bottom: 3rem;
+}
+
+.team-sec{
+    background-color: black;
+    padding: 20px;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+/* contact section */
+
+.contact-header{
+    background-image: url(../images/YOUNG\ K\ 1.jpg);
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.contact-header h1{
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    padding-top: 19.95rem;
+    border-radius: 5px;
+    color: white;
+}
+
+#map{
+    margin: 0 auto;
+    align-self: center;
+    align-items: center;
+}
+
+.contact-options{
+    background-color: white;
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+    margin-top: 10rem;
+}
+
+.contact-options p{
+    color: black;
+}
+
+.in-touch{
+        color: white;
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+        font-size: 40px;
+}
+
+.in-touch-content
+
+.call{
+    padding-bottom:0;
+}
+
+/* footer */
+#logos {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: black;
+  }
+
+.copyright{
+    font-size: 15px;
+    padding-top: 1rem;
+}
+#dont {
+    width: 100%;
+  }
+  #footer {
+    background-color: white;
+    color: black;
+  }
+/* coming page */
+.man{
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-align: center;
+}
