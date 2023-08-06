@@ -326,7 +326,7 @@ footer{
   }
 /* coming page */
 .man{
-    padding-left: 20rem;
-    padding-right: 20rem;
+    padding-left: 0rem;
+    padding-right: 50rem;
     text-align: center;
 }
