@@ -1,24 +1,59 @@
-ul{
-    margin: 0 auto;
-    text-align: center;
+/* Styles for the unordered list */
+ul {
+    margin: 0 auto; /* Center the list */
+    text-align: center; /* Center the text within the list */
 }
 
-/* Customize h1 font size */
-.carousel-caption h1 {
-    font-size: 3rem; /* Adjust the font size as needed */
-    padding-top: 30px;
+/* Styles for an element with the id "id" */
+#id {
+    margin-top: 0px; /* Remove top margin */
 }
 
-h2{
-    text-align: center;
+/* Styles for the home-body class */
+.home-body {
+    background-color: black; /* Set background color */
+}
+
+/* Styles for the home-header class */
+.home-header {
+    background-image: url(../images/vid-cam.jpg);
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    height: 700px;
+    background-size: cover;
+    background-position: bottom;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 4rem;
+}
+
+/* Styles for h1 elements within the home-header class */
+.home-header h1 {
+    font-size: 3rem;
+    margin: 0 auto; /* Center the element horizontally */
+    text-align: center; /* Center the text within the element */
+    padding: 10px;
+    padding-top: 19.95rem;
+    border-radius: 5px;
+    color: white; /* Set text color */
+}
+
+/* Styles for the carousel class */
+.carousel {
+    padding-bottom: 4rem;
+}
+
+/* Styles for h2 elements */
+h2 {
+    text-align: center; /* Center the text within the element */
     font-size: 60px;
 }
 
-li{
+/* Styles for list items */
+li {
     font-size: 20px;
 }
 
-/* styling header carousel button */
+/* Styling for the header carousel button */
 .butn {
     display: inline-block;
     padding: 10px 20px;
@@ -27,33 +62,44 @@ li{
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-  }
+}
 
-  /* Button styles on hover */
-  .butn:hover {
+/* Button styles on hover */
+.butn:hover {
     background-color: black;
     color: white;
-  }
+}
 
-/* home about us section */
-.about-heading{
+/* about page */
+
+/* Styles for the home about us section */
+.about-heading {
     color: white;
-    padding-top: 8rem;
     padding-bottom: 5rem;
     font-size: 40px;
 }
 
-.about-us{
-    background-color: black;
-    text-align: center;
+/* Styles for the about-us class */
+.about-us {
+    background-color: black; /* Set background color */
+    text-align: center; /* Center the text within the element */
 }
 
+/* Styles for the about-content class */
+.about-content {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Styles for the about-text class */
 .about-text {
     margin-bottom: 40px; /* Adds space at the bottom of the paragraph */
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
+/* Styles for the abt-btn class */
 .abt-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -64,34 +110,35 @@ li{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-  }
+}
 
-  /* Button styles on hover */
-  .abt-btn:hover {
+/* Button styles on hover */
+.abt-btn:hover {
     background-color: black;
     color: white;
-  }
+}
 
-  /* Button styles when clicked */
-  .abt-btn:active {
+/* Button styles when clicked */
+.abt-btn:active {
     background-color: white;
     color: black;
-  }
+}
 
-/* Our sevices home section */
-
-.serv{
+/* Styles for the Our services home section */
+.serv {
     color: white;
     font-size: 40px;
     padding-bottom: 20px;
 }
 
-.service{
-    background-color: black;
+/* Styles for the service class */
+.service {
+    background-color: black; /* Set background color */
     padding: 20px;
     padding-top: 10rem;
 }
 
+/* Styles for the butt class */
 .butt {
     display: inline-block;
     padding: 10px 20px;
@@ -102,52 +149,54 @@ li{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-  }
+}
 
-  /* Button styles on hover */
-  .butt:hover {
+/* Button styles on hover */
+.butt:hover {
     background-color: white;
     color: black;
-  }
+}
 
-  /* Button styles when clicked */
-  .butt:active {
+/* Button styles when clicked */
+.butt:active {
     background-color: white;
     color: black;
-  }
+}
 
-.card-title{
-    text-align: center;
+/* Styles for the card-title class */
+.card-title {
+    text-align: center; /* Center the text within the element */
     font-size: 30px;
     padding-bottom: 10px;
 }
 
-header{
-    background-color: black;
+/* Styles for the header element */
+header {
+    background-color: black; /* Set background color */
 }
-  
-p{
-    color: white;
-    text-align: center;
+
+/* Styles for paragraphs */
+p {
+    color: white; /* Set text color */
+    text-align: center; /* Center the text within the element */
     font-size: 25px;
 }
 
-        /* Center the carousel */
-        .carousel-inner {
-            text-align: center;
-        }
+/* Center the carousel */
+.carousel-inner {
+    text-align: center;
+}
 
-        .carousel-caption {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-        
-        /* mobile version */
+/* Styles for the carousel-caption class */
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
-/* Styles for the skip link */
+/* Styles for the skip-link class */
 .skip-link {
     z-index: 1000;
     margin-left: 20px;
@@ -160,13 +209,14 @@ p{
     border-radius: 10px;
 }
 
+/* Styles for the skip-link2 class */
 .skip-link2 {
     z-index: 1000;
     animation: wiggle 0.5s infinite;
     display: inline-block;
     padding: 10px 15px;
-    background-color: black;
-    color: white;
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
     text-decoration: none;
     border-radius: 10px;
 }
@@ -187,77 +237,88 @@ p{
     }
 }
 
-footer{
-    color: black;
-    background-color: white;
+/* Styles for the footer element */
+footer {
+    color: black; /* Set text color */
+    background-color: white; /* Set background color */
 }
 
-/* ----------------
------About Page----
------------------ */
-.about-body{
-    background-color: black;
+/* Styles for the About Page */
+.about-body {
+    background-color: black; /* Set background color */
 }
-.about-header{
+
+/* Styles for the about-header class */
+.about-header {
     background-image: url(../images/cam-c.jpg);
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     height: 700px;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     margin-left: 12px;
     margin-right: 12px;
 }
 
-.about-page-text{
+/* Styles for the about-page-text class */
+.about-page-text {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.about-header h1{
+/* Styles for h1 elements within the about-header class */
+.about-header h1 {
     font-size: 3rem;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto; /* Center the element horizontally */
+    text-align: center; /* Center the text within the element */
     padding: 10px;
     padding-top: 19.95rem;
     border-radius: 5px;
-    color: white;
-}
-.about-sec-link{
-    background-color: black;
+    color: white; /* Set text color */
 }
 
-.team-p{
-    color: black;
+/* Styles for the about-sec-link class */
+.about-sec-link {
+    background-color: black; /* Set background color */
+}
+
+/* Styles for the team-p class */
+.team-p {
+    color: black; /* Set text color */
     font-size: 17px;
 }
 
-.little-about-us{
-    background-color: white;
+/* Styles for the little-about-us class */
+.little-about-us {
+    background-color: white; /* Set background color */
     padding-bottom: 8rem;
 }
 
-.about-heading-2{
+/* Styles for the about-heading-2 class */
+.about-heading-2 {
     padding-bottom: 3rem;
     font-size: 40px;
     padding-top: 8rem;
 }
 
-.team{
-        color: white;
-        font-size: 40px;
-        padding-bottom: 3rem;
+/* Styles for the team class */
+.team {
+    color: white; /* Set text color */
+    font-size: 40px;
+    padding-bottom: 3rem;
 }
 
-.team-sec{
-    background-color: black;
+/* Styles for the team-sec class */
+.team-sec {
+    background-color: black; /* Set background color */
     padding: 20px;
     padding-top: 7rem;
     padding-bottom: 5rem;
 }
 
-/* contact section */
+/* contact page */
 
-.contact-header{
+/* Styles for the contact-header class */
+.contact-header {
     background-image: url(../images/YOUNG\ K\ 1.jpg);
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     height: 700px;
@@ -267,66 +328,115 @@ footer{
     margin-right: 12px;
 }
 
-.contact-header h1{
+/* Styles for h1 elements within the contact-header class */
+.contact-header h1 {
     font-size: 3rem;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto; /* Center the element horizontally */
+    text-align: center; /* Center the text within the element */
     padding: 10px;
     padding-top: 19.95rem;
     border-radius: 5px;
-    color: white;
+    color: white; /* Set text color */
 }
 
-#map{
-    margin: 0 auto;
+#get-us{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Styles for the map id and size change*/
+#map {
+    margin: 0 auto; /* Center the element horizontally */
     align-self: center;
     align-items: center;
+    top: 0;
+    left: 0;
+    width: 90%;
 }
 
-.contact-options{
-    background-color: white;
+/* map container/ setting width and height */
+#map-container {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the contact-options class */
+.contact-options {
+    background-color: white; /* Set background color */
     padding-top: .5rem;
     padding-bottom: 2rem;
     margin-top: 10rem;
 }
 
-.contact-options p{
-    color: black;
+/* Styles for paragraphs within the contact-options class */
+.contact-options p {
+    color: black; /* Set text color */
 }
 
-.in-touch{
-        color: white;
-        padding-top: 8rem;
-        padding-bottom: 5rem;
-        font-size: 40px;
+/* Styles for the in-touch class */
+.in-touch {
+    color: white; /* Set text color */
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    font-size: 40px;
 }
 
-.in-touch-content
-
-.call{
-    padding-bottom:0;
+/* Styles for the call class */
+.call {
+    padding-bottom: 0;
 }
 
-/* footer */
+/* Styles for the footer */
 #logos {
     font-size: 2rem; /* Adjust the size as needed */
-    color: black;
-  }
+    color: black; /* Set text color */
+}
 
-.copyright{
+/* Styles for the copyright class */
+.copyright {
     font-size: 15px;
     padding-top: 1rem;
 }
+
+/* Styles for the dont id */
 #dont {
     width: 100%;
-  }
-  #footer {
+}
+
+/* Styles for the footer id */
+#footer {
+    background-color: white; /* Set background color */
+    color: black; /* Set text color */
+}
+
+/* Project page */
+/* Styles for the coming page */
+#project-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button styles on hover */
+#project-btn:hover {
     background-color: white;
     color: black;
-  }
-/* coming page */
-.man{
-    padding-left: 0rem;
-    padding-right: 50rem;
-    text-align: center;
+}
+
+/* Button styles when clicked */
+#project-btn:active {
+    background-color: white;
+    color: black;
+}
+
+.project-header{
+    color: white;
+    padding-top: 4rem;
 }

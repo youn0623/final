@@ -28,7 +28,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="coming.html">Services</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="about.html">About</a>
@@ -72,36 +72,19 @@ Explore our portfolio and let’s collaborate to achieve your business goals!</p
 
     <section class="team-sec">
         <h2 class="team">Meet The Team</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="./images/pexels-christina-morillo-1181686 (1).jpg" class="card-img-top img-fluid" alt="Image 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Sarah Abweh</h5>
-                        <div class="d-flex justify-content-center"> <!-- text -->
-                            <p class="team-p">Videographer/Photographer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="./images/me.JPG" class="card-img-top img-fluid" alt="Image 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Kyle Young</h5>
-                        <div class="d-flex justify-content-center"> <!-- Centered text -->
-                            <p class="team-p">CEO</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="./images/image1.jpg" class="card-img-top img-fluid" alt="Image 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Yuki Ko</h5>
-                        <div class="d-flex justify-content-center"> <!-- Centered text -->
-                            <p class="team-p">Web Designer</p>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4"> <!-- Center the column -->
+                    <div class="card text-center"> <!-- Center the card content -->
+                        <picture>
+                            <source srcset="./images/me320.jpg" media="(max-width: 479px)">
+                            <source srcset="./images/me480.jpg" media="(min-width: 480px) and (max-width: 719px)">
+                            <source srcset="./images/me720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
+                            <source srcset="./images/me960.jpg" media="(min-width: 1440px)">
+                            <img src="./images/me.JPG" class="card-img-top img-fluid" alt="Image 2">
+                        </picture>
+                        <div class="card-body">
+                            <h5 class="card-title">Kyle Young</h5>
                         </div>
                     </div>
                 </div>
@@ -110,26 +93,18 @@ Explore our portfolio and let’s collaborate to achieve your business goals!</p
     </section>
     
      <!-- adding footer at botom of page which includes a skip link to go back to the top of the page -->
-    <div id="dont" class="mt-5">
+     <div id="dont" class="mt-5">
         <footer id="footer" class="d-flex flex-column align-items-center text-center py-4">
             <div class="mb-2">
                 <a class="skip-link2" href="#top">Back to Top</a>
             </div>
             <div class="mb-2">
                 <p class="copyright text-dark">&copy; Kouj, 2023 All Right Reserved</p>
-                <a class="text-dark" href="coming.html">Privacy Policy</a>
-                <a class="text-dark">Terms of Service</a>
             </div>
             <div class="mb-2">
                 <div class="d-flex">
-                    <a href="coming.html" class="me-3">
+                    <a href="coming.html" class="justify-content-center">
                         <i id="logos" class="fab fa-instagram"></i>
-                    </a>
-                    <a href="coming.html" class="me-3">
-                        <i id="logos" class="fab fa-facebook"></i>
-                    </a>
-                    <a href="coming.html" class="me-3">
-                        <i id="logos" class="fab fa-twitter"></i>
                     </a>
                 </div>
             </div>

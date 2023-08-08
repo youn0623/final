@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
-<body>
-    <!-- adding navigation bar with hamburger menu using bootstrap. Also added elements to change the colour to black -->
+<body class="home-body">
     <nav class="navbar navbar-expand-lg bg-black navbar-dark">
         <div class="container-fluid">
-            <a href=index.html class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="./images/logo.png" alt="brand logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="coming.html">Services</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                 </ul>
@@ -42,98 +40,77 @@
         </div>
     </nav>
     
-    <!-- header section -->
+    <section>
+        <a href="#content" class="skip-link" aria-label="Skip to main content">Skip to content</a>
+    </section>
     
-    <header>
-        <a href="#content" class="skip-link">Skip to content</a>
-        <div class="container-fluid">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <picture>
-                        <img src="images/video-c.jpg" class="d-block w-100" alt="random-photo">
-                        </picture>
-                        <div class="carousel-caption">
-                            <h1>Welcome</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/cam-c.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h1>About Us</h1>
-                            <a href="about.html" class="butn">More</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/code-c.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption">
-                            <h1>Contact Us</h1>
-                            <a href="contact.html" class="butn">More</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        
+    <header class="home-header">
+        <h1>Welcome</h1>
     </header>
 
-    <!-- heading and paragraph for about content -->
     <section id="content" class="about-us">
-        <!-- adding h2 for section -->
-        <h2 class="about-heading" id="about-heading">About Our Company</h2>
-        <div id="about-content" itemscope itemtype="https://schema.org/Thing">
-            <!-- adding paragraph tags for about section -->
+        <div class="about-content" itemscope itemtype="https://schema.org/Thing">
+            <h2 class="about-heading" id="about-heading">About Our Company</h2>
             <p>Welcome to our website!</p>
             <p class="about-text" itemprop="description"> 
                 At Kouj, we offer a diverse range of services 
                 that include photography, videography, 
-                and web development,  all aimed at delivering 
+                and web development, all aimed at delivering 
                 captivating digital experiences.</p>
-            <!-- adding a tag for button -->
-            <a href="about.html" class="abt-btn" role="button">More</a>
+            <a href="about.html" class="abt-btn" role="button" aria-label="Learn more about our company">More</a>
         </div>
     </section>
 
     <div class="service">
-        <h2 class="serv">Our Services</h2>
+        <h2 class="serv">Our Projects</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="./images/video.jpg" class="card-img-top img-fluid" alt="Image 1">
+                    <picture>
+                        <source srcset="./images/video320.jpg" media="(max-width: 479px)">
+                        <source srcset="./images/video480.jpg" media="(min-width: 480px) and (max-width: 719px)">
+                        <source srcset="./images/video720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
+                        <source srcset="./images/video960.jpg" media="(min-width: 1440px)">
+                        <img src="./images/video.jpg" class="card-img-top img-fluid" alt="Image 1">
+                    </picture>
                     <div class="card-body">
                         <h5 class="card-title">Videography</h5>
-                        <div class="d-flex justify-content-center"> <!-- Centered buttons -->
-                            <button class="butt">Learn More</button>
+                        <div class="d-flex justify-content-center">
+                            <a class="butt" href="projects.html#videography-work">See More</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="./images/photo.jpg" class="card-img-top img-fluid" alt="Image 2">
+                    <picture>
+                        <source srcset="./images/photo320.jpg" media="(max-width: 479px)">
+                        <source srcset="./images/photo480.jpg" media="(min-width: 480px) and (max-width: 719px)">
+                        <source srcset="./images/photo720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
+                        <source srcset="./images/photo960.jpg" media="(min-width: 1440px)">
+                        <img src="./images/photo.jpg" class="card-img-top img-fluid" alt="Image 2">
+                    </picture>
                     <div class="card-body">
                         <h5 class="card-title">Photography</h5>
-                        <div class="d-flex justify-content-center"> <!-- Centered buttons -->
-                            <button class="butt">Learn More</button>
+                        <div class="d-flex justify-content-center">
+                            <a class="butt" href="projects.html#photography-work">See More</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="./images/code.jpg" class="card-img-top img-fluid" alt="Image 3">
+                    <picture>
+                        <source srcset="./images/code320.jpg" media="(max-width: 479px)">
+                        <source srcset="./images/code480.jpg" media="(min-width: 480px) and (max-width: 719px)">
+                        <source srcset="./images/code720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
+                        <source srcset="./images/code960.jpg" media="(min-width: 1440px)">
+                        <img src="./images/code.jpg" class="card-img-top img-fluid" alt="Image 3">
+                    </picture>
                     <div class="card-body">
                         <h5 class="card-title">Web Design</h5>
-                        <div class="d-flex justify-content-center"> <!-- Centered buttons -->
-                            <button class="butt">Learn More</button>
+                        <div class="d-flex justify-content-center">
+                            <a class="butt" href="projects.html#web-design-work">See More</a>
                         </div>
                     </div>
                 </div>
@@ -141,27 +118,18 @@
         </div>
     </div>
     
-    <!-- adding footer at botom of page which includes a skip link to go back to the top of the page -->
-    <div id="dont" class="mt-5">
-        <footer id="footer" class="d-flex flex-column align-items-center text-center py-4">
+    <div class="dont">
+        <footer id="footer" class="d-flex flex-column align-items-center text-center py-4" itemscope itemtype="https://schema.org/Organization">
             <div class="mb-2">
-                <a class="skip-link2" href="#top">Back to Top</a>
+                <a class="skip-link2" href="#top" aria-label="Back to top">Back to Top</a>
             </div>
             <div class="mb-2">
-                <p class="copyright text-dark">&copy; Kouj, 2023 All Right Reserved</p>
-                <a class="text-dark" href="coming.html">Privacy Policy</a>
-                <a class="text-dark">Terms of Service</a>
+                <p class="copyright text-dark" aria-label="Copyright">&copy; Kouj, 2023 All Right Reserved</p>
             </div>
             <div class="mb-2">
                 <div class="d-flex">
-                    <a href="coming.html" class="me-3">
-                        <i id="logos" class="fab fa-instagram"></i>
-                    </a>
-                    <a href="coming.html" class="me-3">
-                        <i id="logos" class="fab fa-facebook"></i>
-                    </a>
-                    <a href="coming.html" class="me-3">
-                        <i id="logos" class="fab fa-twitter"></i>
+                    <a href="https://www.instagram.com/kouji.young/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="justify-content-center" aria-label="Instagram">
+                        <i id="logos" class="fab fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
