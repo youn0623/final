@@ -7,110 +7,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kouji</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="about-body">
-    <!-- adding navigation bar with hamburger menu using bootstrap. Also added elements to change the colour to black -->
     <nav class="navbar navbar-expand-lg bg-black navbar-dark">
         <div class="container-fluid">
-            <a href=index.html class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="./images/logo.png" alt="brand logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" itemprop="name">
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" href="index.html" itemprop="url">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" href="projects.html" itemprop="url">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link active" href="about.html" itemprop="url">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" aria-current="page" href="contact.html" itemprop="url">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
                 </ul>
             </div>
         </div>
     </nav>
-    
-    
 
-    <!-- adding a skiplink -->
-    <!-- <a id=top class="skip-link" href="#content">Main content</a> -->
-    
-    <!-- header section -->
     <section class="about-sec-link">
-    <a href="#content" class="skip-link">Skip to content</a>
+        <a href="#content" class="skip-link" role="link">Skip to content</a>
     </section>
     <header class="about-header">
-        <h1>About Us</h1>
+        <h1 class="animate__animated animate__zoomIn" role="heading">About Us</h1>
     </header>
 
-    <!-- heading and paragraph for about content -->
-    <section id="content" class="little-about-us">
-        <!-- adding h2 for section -->
-        <h2 class="about-heading-2 text-dark">A Little About Us</h2>
-        <div id="about-page-content" itemscope itemtype="https://schema.org/Thing">
-            <!-- adding paragraph tags for about section -->
-            <p class="text-dark">Welcome to Kouj!</p>
-            <p class="about-page-text text-dark" itemprop="description"> 
-            We offer photography, videography, and web development services for captivating digital experiences.
- Our mission is to bring your brand to life with visually stunning designs. 
-From capturing your essence in photography to creating compelling videos and appealing websites, we’ll set your brand apart.
-Explore our portfolio and let’s collaborate to achieve your business goals!</p>
+    <section id="content" class="little-about-us" itemscope itemtype="https://schema.org/WebPage">
+        <h2 class="about-heading-2 text-dark" role="heading">A Little About Us</h2>
+        <div id="about-page-content">
+            <p class="text-dark" role="text">Welcome to Kouj!</p>
+            <p class="about-page-text text-dark" itemprop="description" role="text"> 
+                We offer photography, videography, and web development services for captivating digital experiences.
+                Our mission is to bring your brand to life with visually stunning designs. 
+                From capturing your essence in photography to creating compelling videos and appealing websites, we’ll set your brand apart.
+                Explore our portfolio and let’s collaborate to achieve your business goals!
+            </p>
         </div>
     </section>
 
-    <section class="team-sec">
-        <h2 class="team">Meet The Team</h2>
+    <section class="team-sec" itemscope itemtype="https://schema.org/Organization">
+        <h2 class="team" role="heading">Meet The Team</h2>
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 mb-4"> <!-- Center the column -->
-                    <div class="card text-center"> <!-- Center the card content -->
+                <div class="col-md-6 mb-4" itemprop="member">
+                    <div class="card text-center" itemscope itemtype="https://schema.org/Person">
                         <picture>
                             <source srcset="./images/me320.jpg" media="(max-width: 479px)">
                             <source srcset="./images/me480.jpg" media="(min-width: 480px) and (max-width: 719px)">
                             <source srcset="./images/me720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
                             <source srcset="./images/me960.jpg" media="(min-width: 1440px)">
-                            <img src="./images/me.JPG" class="card-img-top img-fluid" alt="Image 2">
+                            <img src="./images/me.JPG" class="card-img-top img-fluid" alt="Image 2" role="img" itemprop="image">
                         </picture>
                         <div class="card-body">
-                            <h5 class="card-title">Kyle Young</h5>
+                            <h5 class="card-title" role="heading" itemprop="name">Kyle Young</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-     <!-- adding footer at botom of page which includes a skip link to go back to the top of the page -->
-     <div id="dont" class="mt-5">
+
+    <div id="dont" class="mt-5">
         <footer id="footer" class="d-flex flex-column align-items-center text-center py-4">
             <div class="mb-2">
-                <a class="skip-link2" href="#top">Back to Top</a>
+                <a class="skip-link2" href="#top" role="link">Back to Top</a>
             </div>
             <div class="mb-2">
-                <p class="copyright text-dark">&copy; Kouj, 2023 All Right Reserved</p>
+                <p class="copyright text-dark" role="contentinfo">&copy; Kouj, 2023 All Right Reserved</p>
             </div>
             <div class="mb-2">
                 <div class="d-flex">
-                    <a href="coming.html" class="justify-content-center">
+                    <a href="coming.html" class="justify-content-center" role="link">
                         <i id="logos" class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

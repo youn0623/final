@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body class="home-body">
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
                 <img src="./images/logo.png" alt="brand logo">
@@ -21,20 +22,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" itemprop="name">
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link active" href="index.html" itemprop="url">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" href="projects.html" itemprop="url">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" href="about.html" itemprop="url">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" aria-current="page" href="contact.html" itemprop="url">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
                 </ul>
             </div>
         </div>
@@ -45,11 +45,11 @@
     </section>
     
     <header class="home-header">
-        <h1>Welcome</h1>
+        <h1 class="animate__animated animate__jackInTheBox">Welcome</h1>
     </header>
 
-    <section id="content" class="about-us">
-        <div class="about-content" itemscope itemtype="https://schema.org/Thing">
+    <section id="content" class="about-us" itemscope itemtype="https://schema.org/WebPage">
+        <div class="about-content">
             <h2 class="about-heading" id="about-heading">About Our Company</h2>
             <p>Welcome to our website!</p>
             <p class="about-text" itemprop="description"> 
@@ -76,7 +76,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Videography</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="butt" href="projects.html#videography-work">See More</a>
+                            <a class="butt" href="projects.html#videography-work" role="button" aria-label="See more about videography projects">See More</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Photography</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="butt" href="projects.html#photography-work">See More</a>
+                            <a class="butt" href="projects.html#photography-work" role="button" aria-label="See more about photography projects">See More</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Web Design</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="butt" href="projects.html#web-design-work">See More</a>
+                            <a class="butt" href="projects.html#web-design-work" role="button" aria-label="See more about web design projects">See More</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
     </div>
     
     <div class="dont">
-        <footer id="footer" class="d-flex flex-column align-items-center text-center py-4" itemscope itemtype="https://schema.org/Organization">
+        <footer id="footer" class="d-flex flex-column align-items-center text-center py-4">
             <div class="mb-2">
                 <a class="skip-link2" href="#top" aria-label="Back to top">Back to Top</a>
             </div>

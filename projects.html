@@ -10,14 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="about-body">
-    <!-- adding navigation bar with hamburger menu using bootstrap. Also added elements to change the colour to black -->
     <nav class="navbar navbar-expand-lg bg-black navbar-dark">
         <div class="container-fluid">
-            <a href=index.html class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="./images/logo.png" alt="brand logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,96 +25,93 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" itemprop="name">
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" href="index.html" itemprop="url">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="projects.html">Projects</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link active" href="projects.html" itemprop="url">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" href="about.html" itemprop="url">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                        <a class="nav-link" aria-current="page" href="contact.html" itemprop="url">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
                 </ul>
             </div>
         </div>
     </nav>
 
     <header>
-        <h2 class="project-header">My Projects</h2>
+        <h1 class="project-header animate__animated animate__zoomInDown">My Projects</h1>
     </header>
-
-    <!-- adding a skiplink -->
-    <!-- <a id=top class="skip-link" href="#content">Main content</a> -->
 
     <section class="team-sec">
         <div class="container justify-content-center">
-            <div class="card mb-4 text-center">
+            <div class="card mb-4 text-center" itemscope itemtype="https://schema.org/CreativeWork">
                 <picture>
                     <source srcset="./images/int320.png" media="(max-width: 479px)">
                     <source srcset="./images/int480.png" media="(min-width: 480px) and (max-width: 719px)">
                     <source srcset="./images/int720.png" media="(min-width: 720px) and (max-width: 1439px)">
                     <source srcset="./images/int960.png" media="(min-width: 1440px)">
-                    <img src="./images/int.png" class="card-img-top" alt="Card Image" id="videography-work">
+                    <img src="./images/int.png" class="card-img-top" alt="Card Image" id="videography-work" itemprop="image">
                 </picture>
                 <div class="card-footer">
-                    <h5 class="card-title">Videography Work</h5>
+                    <h5 class="card-title" itemprop="name">Videography Work</h5>
                     <a href="https://www.youtube.com/watch?v=3aS_GsBxYKg" id="project-btn"
-                        class="btn btn-primary">Interview</a>
-                    <a href="https://www.youtube.com/watch?v=HXSjlkk6Rok" id="project-btn" class="btn btn-primary">Foley
-                        Sound<a>
+                        class="btn btn-primary" role="button">Interview</a>
+                    <a href="https://www.youtube.com/watch?v=HXSjlkk6Rok" id="project-btn" class="btn btn-primary"
+                        role="button">Foley Sound</a>
                 </div>
             </div>
 
-            <div class="card mb-4 text-center">
+            <div class="card mb-4 text-center" itemscope itemtype="https://schema.org/CreativeWork">
                 <picture>
                     <source srcset="./images/ad-po320.png" media="(max-width: 479px)">
                     <source srcset="./images/ad-po480.png" media="(min-width: 480px) and (max-width: 719px)">
                     <source srcset="./images/ad-po720.png" media="(min-width: 720px) and (max-width: 1439px)">
                     <source srcset="./images/ad-po960.png" media="(min-width: 1440px)">
-                    <img src="./images/ad-po.png" class="card-img-top" alt="Card Image" id="photography-work">
+                    <img src="./images/ad-po.png" class="card-img-top" alt="Card Image" id="photography-work" itemprop="image">
                 </picture>
                 <div class="card-footer">
-                    <h5 class="card-title">Photography Work</h5>
-                    <a href="https://youn0623.myportfolio.com/" id="project-btn" class="btn btn-primary">Adobe
-                        Portfolio</a>
+                    <h5 class="card-title" itemprop="name">Photography Work</h5>
+                    <a href="https://youn0623.myportfolio.com/" id="project-btn" class="btn btn-primary"
+                        role="button">Adobe Portfolio</a>
                 </div>
             </div>
 
-            <div class="card mb-4 text-center">
+            <div class="card mb-4 text-center" itemscope itemtype="https://schema.org/CreativeWork">
                 <picture>
                     <source srcset="./images/wordpress320.png" media="(max-width: 479px)">
                     <source srcset="./images/wordpress480.png" media="(min-width: 480px) and (max-width: 719px)">
                     <source srcset="./images/wordpress720.png" media="(min-width: 720px) and (max-width: 1439px)">
                     <source srcset="./images/wordpress960.png" media="(min-width: 1440px)">
-                    <img src="./images/wordpress.png" class="card-img-top" alt="Card Image" id="web-design-work">
+                    <img src="./images/wordpress.png" class="card-img-top" alt="Card Image" id="web-design-work" itemprop="image">
                 </picture>
                 <div class="card-footer">
-                    <h5 class="card-title">Web Design Work</h5>
+                    <h5 class="card-title" itemprop="name">Web Design Work</h5>
                     <a href="https://youn0623.github.io/mtm6201-midterm/index.html" id="project-btn"
-                        class="btn btn-primary">Coding Mobile Mockup</a>
-                    <a href="http://kylekouj.com/" id="project-btn" class="btn btn-primary">Wordpress Website</a>
+                        class="btn btn-primary" role="button">Coding Mobile Mockup</a>
+                    <a href="http://kylekouj.com/" id="project-btn" class="btn btn-primary" role="button">Wordpress Website</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- adding footer at botom of page which includes a skip link to go back to the top of the page -->
     <div id="dont" class="mt-5">
         <footer id="footer" class="d-flex flex-column align-items-center text-center py-4">
             <div class="mb-2">
-                <a class="skip-link2" href="#top">Back to Top</a>
+                <a class="skip-link2" href="#top" role="link">Back to Top</a>
             </div>
             <div class="mb-2">
-                <p class="copyright text-dark">&copy; Kouj, 2023 All Right Reserved</p>
+                <p class="copyright text-dark" role="contentinfo">
+                    &copy; Kouj, 2023 All Right Reserved
+                </p>
             </div>
             <div class="mb-2">
                 <div class="d-flex">
-                    <a href="coming.html" class="justify-content-center">
+                    <a href="coming.html" class="justify-content-center" role="link">
                         <i id="logos" class="fab fa-instagram"></i>
                     </a>
                 </div>
