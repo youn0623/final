@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kouji</title>
+    <!-- Adding stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,19 +14,23 @@
 </head>
 
 <body class="home-body">
+    <!-- Adding Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-black navbar-dark" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
                 <img src="./images/logo.png" alt="brand logo">
             </a>
+            <!-- Adding button for collapsed navigation menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Adding Navigation links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0" itemprop="name">
                     <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <a class="nav-link active" href="index.html" itemprop="url">Home</a>
                     </li>
+                    <!-- Adding Additional navigation links -->
                     <li class="nav-item" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <a class="nav-link" href="projects.html" itemprop="url">Projects</a>
                     </li>
@@ -40,33 +45,42 @@
         </div>
     </nav>
     
+    <!-- Adding skip to content skip link -->
     <section>
         <a href="#content" class="skip-link" aria-label="Skip to main content">Skip to content</a>
     </section>
     
+    <!-- Adding header section -->
     <header class="home-header">
         <h1 class="animate__animated animate__jackInTheBox">Welcome</h1>
     </header>
 
+    <!-- Adding about section -->
     <section id="content" class="about-us" itemscope itemtype="https://schema.org/WebPage">
         <div class="about-content">
             <h2 class="about-heading" id="about-heading">About Our Company</h2>
             <p>Welcome to our website!</p>
+            <!-- Adding description of the company -->
             <p class="about-text" itemprop="description"> 
                 At Kouj, we offer a diverse range of services 
                 that include photography, videography, 
                 and web development, all aimed at delivering 
                 captivating digital experiences.</p>
+            <!-- Adding Button for about page -->
             <a href="about.html" class="abt-btn" role="button" aria-label="Learn more about our company">More</a>
         </div>
     </section>
 
+    <!-- Adding Projects section -->
     <div class="service">
         <h2 class="serv">Our Projects</h2>
         <div class="row">
+            <!-- Adding Video project section -->
             <div class="col-md-4 mb-4">
                 <div class="card">
+                    <!-- Adding Responsive images -->
                     <picture>
+                        <!-- Adding image sources for different screen widths -->
                         <source srcset="./images/video320.jpg" media="(max-width: 479px)">
                         <source srcset="./images/video480.jpg" media="(min-width: 480px) and (max-width: 719px)">
                         <source srcset="./images/video720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
@@ -75,15 +89,18 @@
                     </picture>
                     <div class="card-body">
                         <h5 class="card-title">Videography</h5>
+                        <!-- Adding Button for about videography projects section -->
                         <div class="d-flex justify-content-center">
                             <a class="butt" href="projects.html#videography-work" role="button" aria-label="See more about videography projects">See More</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Adding Photography project -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <picture>
+                        <!-- Adding image sources for different screen widths -->
                         <source srcset="./images/photo320.jpg" media="(max-width: 479px)">
                         <source srcset="./images/photo480.jpg" media="(min-width: 480px) and (max-width: 719px)">
                         <source srcset="./images/photo720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
@@ -92,23 +109,28 @@
                     </picture>
                     <div class="card-body">
                         <h5 class="card-title">Photography</h5>
+                        <!-- Adding Button for photography projects -->
                         <div class="d-flex justify-content-center">
                             <a class="butt" href="projects.html#photography-work" role="button" aria-label="See more about photography projects">See More</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Adding Web design project section -->
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <picture>
+                        <!-- Adding image sources for different screen widths -->
                         <source srcset="./images/code320.jpg" media="(max-width: 479px)">
                         <source srcset="./images/code480.jpg" media="(min-width: 480px) and (max-width: 719px)">
                         <source srcset="./images/code720.jpg" media="(min-width: 720px) and (max-width: 1439px)">
                         <source srcset="./images/code960.jpg" media="(min-width: 1440px)">
                         <img src="./images/code.jpg" class="card-img-top img-fluid" alt="Image 3">
                     </picture>
+                    <!-- Adding Card content -->
                     <div class="card-body">
                         <h5 class="card-title">Web Design</h5>
+                        <!-- Adding Button to see more about web design projects -->
                         <div class="d-flex justify-content-center">
                             <a class="butt" href="projects.html#web-design-work" role="button" aria-label="See more about web design projects">See More</a>
                         </div>
@@ -118,14 +140,18 @@
         </div>
     </div>
     
+    <!-- Adding Footer section -->
     <div class="dont">
         <footer id="footer" class="d-flex flex-column align-items-center text-center py-4">
+            <!-- Adding Back to top skip link -->
             <div class="mb-2">
                 <a class="skip-link2" href="#top" aria-label="Back to top">Back to Top</a>
             </div>
+            <!-- Adding copyright info -->
             <div class="mb-2">
                 <p class="copyright text-dark" aria-label="Copyright">&copy; Kouj, 2023 All Right Reserved</p>
             </div>
+            <!-- Adding social media links -->
             <div class="mb-2">
                 <div class="d-flex">
                     <a href="https://www.instagram.com/kouji.young/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="justify-content-center" aria-label="Instagram">
@@ -135,6 +161,7 @@
             </div>
         </footer>
     </div>
+      <!-- Adding Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
